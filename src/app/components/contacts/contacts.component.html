@@ -1,91 +1,106 @@
 <div class="container-fluid contacts-container">
-  <div class="row">
-      <div class="col-12">
-        <!--Panel-->
-        <div class="card card-body invitation text-center" style="margin: 0 auto">
-            <h2 class="card-title">Contact me</h2>
-            <p class="card-text">Book possible dates for your ideal English lessons or your translation starting date and I will 
-              get back to you as soon as possible. You can also ask for any extra information you want in the corresponding tab.</p>
-            <h4>Hope to work with you!</h4>
+    <div class="row">
+        <div class="col-12">
+            <!--Panel-->
+            <div class="card card-body invitation text-center" style="margin: 0 auto">
+                <h2 class="card-title">Contact me</h2>
+                <p class="card-text">Book possible dates for your ideal English lessons or your translation starting date and I will get back
+                    to you as soon as possible. You can also ask for any extra information you want in the corresponding
+                    tab.</p>
+                <h4>Hope to work with you!</h4>
+            </div>
+            <!--/.Panel-->
         </div>
-        <!--/.Panel-->
-      </div>
     </div>
-<br>
-<br>
+    <br>
+    <br>
     <div>
         <tabset class="contacts-titles">
-          <!--English Lessons Tab-->
+            <!--English Lessons Tab-->
             <tab heading="English Lessons" id="tab1" class="contacts-titles">
-              <div class="container-fluid lessons-form row">
-                  <div class="col">
-                      <div class="md-form row" style="width: 23vw">
-                          <i class="fas fa-user prefix"></i>
-                          <input mdbInputDirective type="text" id="form2" class="form-control">
-                          <label for="form2">Full name</label>
-                      </div>
-                      <div class="md-form row" style="width: 23vw">
-                          <i class="fa fa-envelope prefix"></i>
-                          <input mdbInputDirective type="text" id="form2" class="form-control">
-                          <label for="form2">E-mail adress</label>
-                      </div>
-                      <div class="md-form row" style="width: 23vw">
-                          <i class="fas fa-globe prefix"></i>
-                          <input mdbInputDirective type="text" id="form2" class="form-control">
-                          <label for="form2">Home country</label>
-                      </div>
-                      <div class="row">
-                          <div class="col-sm">
-                              <label>Student's age</label>
-                              <select class="form-control row">
-                                  <option selected>Choose age...</option>
-                                  <option value="1">5-8</option>
-                                  <option value="2">9-17</option>
-                                  <option value="3">18-30</option>
-                                  <option value="3">30+</option>
-                              </select>
-                          </div>
-                          <div class="col-sm">
-                              <label>English level</label>
-                              <select class="form-control">
-                                  <option selected>Choose level...</option>
-                                  <option value="1">None</option>
-                                  <option value="2">Basic</option>
-                                  <option value="3">Intermediate</option>
-                                  <option value="3">Advanced</option>
-                                </select>
-                          </div>
-                      </div>
-                  </div>
-
-
-                  <div class="col">
-                      <div class="md-form row">
-                            <div class="row" style="width: 45vh">
-                              <input type="text"
-                              placeholder="Choose your ideal starting date"
-                              class="form-control"
-                              bsDatepicker>
+                <div class="container-fluid lessons-form">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="md-form">
+                                <i class="fas fa-user prefix"></i>
+                                <input mdbInputDirective type="text" id="fullname" class="form-control">
+                                <label for="fullname">Full name</label>
                             </div>
-                      </div>
-                      <div class="md-form row">
-                        <input type="text" placeholder="Write your message..." class="message">
-                      </div>
-                  </div>
-              </div>
-            </tab>
-          <!--Translation Tab-->
-            <tab heading="Translation" class="contacts-titles">
-                <div class="container-fluid">
-                  <p>Patatas</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="md-form">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input mdbInputDirective type="text" id="email" class="form-control">
+                                <label for="email">E-mail adress</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="md-form">
+                                <i class="fas fa-globe prefix"></i>
+                                <input mdbInputDirective type="text" id="country" class="form-control">
+                                <label for="country">Home country</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="md-form">
+                                    <i class="far fa-calendar-alt prefix"></i>
+                                    <input type="text" placeholder="Choose your ideal starting date" class="form-control" bsDatepicker>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>Student's age</label>
+                                <select class="form-control">
+                                    <option selected>Choose age...</option>
+                                    <option value="1">5-8</option>
+                                    <option value="2">9-17</option>
+                                    <option value="3">18-30</option>
+                                    <option value="3">30+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>English level</label>
+                                <select class="form-control">
+                                    <option selected>Choose level...</option>
+                                    <option value="1">None</option>
+                                    <option value="2">Basic</option>
+                                    <option value="3">Intermediate</option>
+                                    <option value="3">Advanced</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 offset-md-3">
+                            <div class="md-form">
+                                <textarea class="form-control message" placeholder="Write your message..." rows="3">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </tab>
-          <!--General Information Tab-->
-            <tab heading="General Information" class="contacts-titles">
-                <div class="container-fluid">
-                  <p>Patatas</p>
-                </div>
-            </tab>
-        </tabset>
-      </div>
+
+</tab>
+<!--Translation Tab-->
+<tab heading="Translation" class="contacts-titles">
+    <div class="container-fluid">
+        <p>Patatas</p>
+    </div>
+</tab>
+<!--General Information Tab-->
+<tab heading="General Information" class="contacts-titles">
+    <div class="container-fluid">
+        <p>Patatas</p>
+    </div>
+</tab>
+</tabset>
+</div>
 </div>
