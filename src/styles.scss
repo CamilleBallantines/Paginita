@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+.header{
+    height:8vh;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(236, 236, 236);
+}
+.body{
+    min-height: 86vh;
+    background-image: url("assets/images/pattern.png");
+    background-repeat: repeat;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+.footer{
+    height:6vh;
+    background-color: rgb(170, 170, 170);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
