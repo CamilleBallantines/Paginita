@@ -1,0 +1,20 @@
+<div class="row text-center">
+  <div class="col-12 col-md-6 offset-md-3">
+      <button class="btn waves-light send-button" mdbWavesEffect (click)="openModal(template)">Send
+          <i class="fa fa-paper-plane-o ml-1"></i>
+      </button>
+  </div>
+</div>
+
+<ng-template #template>
+  <div class="modal-header" style="background-color: rgb(38, 48, 70)">
+    <h4 class="modal-title pull-left" style="color: white"><b>Message sent</b></h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()" style="color: white">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body text-center">
+    <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+    <p style="font-size: 125%"><b>I'll get back to you as soon as possible!</b></p>
+  </div>
+</ng-template>
