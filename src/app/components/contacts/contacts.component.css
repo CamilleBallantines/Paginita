@@ -20,3 +20,7 @@
 .message {
     width: 100%;
 }
+
+.send-button {
+    background-color: rgb(38, 48, 70);
+}

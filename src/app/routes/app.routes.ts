@@ -7,7 +7,7 @@ import { ProgrammComponent } from '../components/programm/programm.component';
 const appRoutes: Routes = [
   {path: '', redirectTo: 'home', pathMatch : 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'contacts', component: ContactsComponent},
+  {path: 'contact', component: ContactsComponent},
   {path: 'programm', component: ProgrammComponent},
   // {path: '**', component: PageNotFoundComponent },
 
