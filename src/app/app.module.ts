@@ -15,6 +15,7 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { FormLessonsComponent } from './components/contacts/forms/form-lessons/form-lessons.component';
 import { FormTranslationComponent } from './components/contacts/forms/form-translation/form-translation.component';
 import { FormGeneralComponent } from './components/contacts/forms/form-general/form-general.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FormGeneralComponent } from './components/contacts/forms/form-general/f
     AppRouting,
     MDBBootstrapModule.forRoot(),
     TabsModule.forRoot(),
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    ModalModule.forRoot()
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
