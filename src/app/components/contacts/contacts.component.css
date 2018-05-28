@@ -9,21 +9,19 @@
 }
 
 .invitation {
-    width: 50vh;
+    max-width: 20vw;
+    width: 20vw;
+    transition:  width 2s, height 1s, transform 2s;
 }
 
 .contacts-titles {
     color: black;
 }
 
-.lessons-form {
-    margin-top: 5vh;
-}
-
-.message {
-    width: 100%;
-}
-
-.send-button {
-    background-color: rgb(38, 48, 70);
+@media (max-width:1200px) {
+    .invitation{
+        transition:  width 2s, height 1s, transform 2s;
+        width:100vw;
+        max-width: 100%;
+    }
 }

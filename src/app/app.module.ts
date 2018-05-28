@@ -12,6 +12,9 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { FormLessonsComponent } from './components/contacts/forms/form-lessons/form-lessons.component';
+import { FormTranslationComponent } from './components/contacts/forms/form-translation/form-translation.component';
+import { FormGeneralComponent } from './components/contacts/forms/form-general/form-general.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     HeaderComponent,
     FooterComponent,
     ContactsComponent,
-    ProgrammComponent
+    ProgrammComponent,
+    FormLessonsComponent,
+    FormTranslationComponent,
+    FormGeneralComponent
   ],
   imports: [
     BrowserModule,
