@@ -18,3 +18,31 @@
     padding: 2vh; 
     margin-top: 4vh;
 }
+
+/* Home Cards */
+.lessons-information {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(124, 124, 124);
+}
+
+.lessons-title {
+    position: absolute;
+    top: -2vh;
+    bottom: 0;
+    left: -1vw;
+    right: 0;
+    height: 25%;
+    width: 45%;
+    background-color: skyblue;
+}
+
+.english-lessons-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.english-lessons-text {
+    padding: 15vh;
+}
