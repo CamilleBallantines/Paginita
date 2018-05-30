@@ -8,7 +8,7 @@ const appRoutes: Routes = [
   {path: '', redirectTo: 'home', pathMatch : 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'contact', component: ContactsComponent},
-  {path: 'programm', component: ProgrammComponent},
+  {path: 'program', component: ProgrammComponent},
   // {path: '**', component: PageNotFoundComponent },
 
 ];
