@@ -23,8 +23,9 @@
 .lessons-information {
     position: relative;
     width: 50vw;
-    height: 50vh;
-    background-color: rgb(124, 124, 124);
+    height: auto;
+    background-color: white;
+    border: 1px solid rgb(196, 196, 196);
 }
 
 .lessons-title {
@@ -33,16 +34,56 @@
     bottom: 0;
     left: -1vw;
     right: 0;
-    height: 25%;
+    height: 12%;
     width: 45%;
-    background-color: skyblue;
+    background-color: #156a86;
 }
 
 .english-lessons-title {
     text-align: center;
     font-weight: bold;
+    color: white;
 }
 
 .english-lessons-text {
-    padding: 15vh;
+    padding-top: 12vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.translation-title {
+    position: absolute;
+    top: -2vh;
+    bottom: 0;
+    left: -1vw;
+    right: 0;
+    height: 15%;
+    width: 45%;
+    background-color: #156a86;
+}
+
+.buttons {
+    background-color: rgb(38, 48, 70);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    margin: 1vw;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    outline: 0;
+}
+
+.rounded-images {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 5px solid rgb(38, 48, 70);
+    margin: 1vw;
 }
