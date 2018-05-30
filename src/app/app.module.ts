@@ -18,6 +18,7 @@ import { FormGeneralComponent } from './components/contacts/forms/form-general/f
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { SendComponent} from './components/contacts/forms/send/send.component';
 import { CardsComponent } from './components/home/cards/cards.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { CardsComponent } from './components/home/cards/cards.component';
     FormGeneralComponent,
     SendComponent,
     CardsComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
