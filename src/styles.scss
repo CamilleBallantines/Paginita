@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+body{
+    scroll-behavior: smooth;
+}
+
 .header{
     height:8vh;
     font-weight: bold;
@@ -10,13 +14,32 @@
     min-height: 86vh;
     background-image: url("assets/images/pattern.png");
     background-repeat: repeat;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    // padding-left: 20vw;
+    // padding-right: 20vw;
     padding-bottom: 2vh;
     padding-top: 2vh;
 }
+
 .footer{
     height:6vh;
     background-color: rgb(170, 170, 170);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.paginita-container{
+    width:60vw;
+    margin: 0 auto;
+    transition: width 2s; 
+}
+
+@media (max-width:991px){
+    .paginita-container{
+        width:90vw;
+    }
+}
+
+@media (max-width:768px){
+    .paginita-container{
+        width:95vw;
+    }
 }
