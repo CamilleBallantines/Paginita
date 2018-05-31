@@ -10,12 +10,12 @@
 }
 
 .container-lessons {
-    padding: 2vh; 
+    padding: 2vh;
     margin-top: 4vh;
 }
 
 .container-translation {
-    padding: 2vh; 
+    padding: 2vh;
     margin-top: 4vh;
 }
 
@@ -80,13 +80,30 @@
 }
 
 .inicial-button {
-    border-radius: 15px;
+    border-radius: 8px;
     background-color: white;
     border: 2px solid rgb(38, 48, 70);
     color: rgb(38, 48, 70);
     font-weight: bold;
     font-size: 22px;
-    width: 15vw;
-    margin-top: 5vh;
+    width: 100%;
+    max-width: 400px;
+    display: inline-block;
+    /* width: 15vw; */
+    /* margin-top: 5vh; */
+}
 
+@media(min-width: 992px) {
+  .inicial-button-div:first-of-type {
+    text-align: end;
+  }
+
+  .inicial-button-div:last-of-type {
+    text-align: start;
+  }
+}
+@media(max-width: 992px) {
+  .inicial-button-div {
+    text-align: center;
+  }
 }
