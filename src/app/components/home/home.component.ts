@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  navIsFixed: boolean;
+
   constructor() { }
 
-  ngOnInit() {
-  }
+ngOnInit(): void {
+
+}
+
+scrollToElement(element){
+  let el = document.getElementById(element);
+      el.scrollIntoView({behavior: "smooth", block: 'start'})
+}
+
 
 }

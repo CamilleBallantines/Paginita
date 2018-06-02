@@ -32,20 +32,20 @@
 
     <div class="row justify-content-center" style="margin-top: 5vh;">
       <div class="container col-lg-6 col-md-12 inicial-button-div">
-          <button type="button" class="btn inicial-button" mdbWavesEffect>English Lessons</button>
+          <button type="button" (click)="scrollToElement('english-lesson')" class="btn inicial-button" mdbWavesEffect>English Lessons</button>
       </div>
       <div class="container col-lg-6 col-md-12 inicial-button-div">
-          <button type="button" class="btn inicial-button" mdbWavesEffect>Translation</button>
+          <button type="button" (click)="scrollToElement('english-translation')"  class="btn inicial-button" mdbWavesEffect>Translation</button>
       </div>
     </div>
 
 
 <!--Prueba HOME-->
 
-    <div class="container" style="margin-top: 10vh">
+    <div class="container" style="padding-top: 10vh" id='english-lesson'>
       <!--Lessons-->
-        <div class="lessons-information example z-depth-2 text-center" style="margin-bottom: 8vh">
-              <p class="english-lessons-text">
+        <div class="lessons-information example z-depth-2 text-center" style="margin-bottom: 8vh" >
+              <p class="english-lessons-text" >
                   Follow structured plans designed specifically for English improvement, depending on the age and needs each student/client has. Taking a first look into your
                   English level you will be asign tasks to develop the main techniques when learning any language which are: Reading, Listening, Writting and Speaking.
                   <br>
@@ -62,7 +62,7 @@
                 </div>
               </div>
 
-            <div class="lessons-title example z-depth-2">
+            <div class="lessons-title example z-depth-2" >
               <br>
               <h1 class="english-lessons-title">English lessons</h1>
             </div>
@@ -70,7 +70,7 @@
 
       <!--Translation-->
 
-        <div class="lessons-information example z-depth-2 text-center">
+        <div class="lessons-information example z-depth-2 text-center" id='english-translation' >
             <p class="english-lessons-text">
                 Obtain your desired translations ready whenever you need them, with professionalism and accuracy. Specialized in the Spanish-English and English-Spanish
                 translation and in any type of document, these translations are charged for the amount of words and time spent on them. Transform your work and papers
@@ -97,7 +97,7 @@
                 </div>
                 <div>
                     <button class="buttons">
-                      <i class="fas fa-file"></i>
+                      <i class="fas fa-file"> </i>
                     </button>
                 </div>
               </div>

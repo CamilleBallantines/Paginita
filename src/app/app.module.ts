@@ -42,7 +42,7 @@ import { AboutComponent } from './components/about/about.component';
     MDBBootstrapModule.forRoot(),
     TabsModule.forRoot(),
     BsDatepickerModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
