@@ -93,6 +93,18 @@
     /* margin-top: 5vh; */
 }
 
+.new-lessons-title {
+    margin: 50px;
+    background-color: #156a86;
+    height: 10vh;
+}
+
+.new-translation-title {
+    margin: 50px;
+    background-color: #156a86;
+    height: 10vh;
+}
+
 @media(min-width: 992px) {
   .inicial-button-div:first-of-type {
     text-align: end;
@@ -106,4 +118,34 @@
   .inicial-button-div {
     text-align: center;
   }
+}
+
+@media (max-width: 1200px) {
+    .lessons-title {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .new-lessons-title {
+        display: block !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .english-lessons-text {
+        padding-top: 0vh !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .translation-title {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .new-translation-title {
+        display: block !important;
+    }
 }
