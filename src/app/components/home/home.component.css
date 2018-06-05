@@ -2,7 +2,8 @@
     background-color: #FBFBFB;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 4vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
 .choose-area {
@@ -148,4 +149,38 @@
     .new-translation-title {
         display: block !important;
     }
+}
+
+@media (max-width: 770px) {
+    .home-container {
+        width: 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .carrusel {
+        padding: 0 !important;
+    }
+
+    .new-lessons-title {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .choose {
+        font-size: 30px;
+    }
+
+    .buttons {
+        height: 90px;
+        width: 90px;
+        font-size: 40px;
+    }
+
+    .inicial-button {
+        max-width: 300px;
+    }
+
 }

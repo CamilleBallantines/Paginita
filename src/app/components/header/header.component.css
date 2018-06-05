@@ -12,3 +12,16 @@
 .new-header {
     background-color: red;
 }
+
+@media (max-width: 991px) {
+    .social-media {
+        margin-right: 2vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .social-media {
+        margin-right: 5vw;
+        font-size: 8vw;
+    }
+}

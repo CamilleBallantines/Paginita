@@ -7,8 +7,23 @@
 
 .final-box {
     margin-top: 2vh;
-    margin-bottom: 4vh; 
-    background-color: #156a86;
+    margin-bottom: 4vh;
+    margin-left: 2vw; 
+    margin-right: 2vw; 
+    background-color: white;
+    border: 1px solid rgb(233, 233, 233);
+}
+
+.view img {
+    display: inline;
+}
+
+.cardtwo {
+    padding-top: 2pc;
+}
+
+.item {
+    margin-bottom: 5px;
 }
 
 @media (max-width:991px) {
@@ -23,10 +38,43 @@
     }
 }
 
-.view img {
-    display: inline;
+
+@media (min-width: 2500px) {
+    .aboutme-text {
+        font-size:  !important;
+    }
 }
 
-.cardtwo {
-    padding-top: 2pc;
+@media (max-width: 1490px) {
+    .up-line {
+        width: auto !important;
+    }
 }
+
+@media (max-width: 770px) {
+    .about-container {
+        width: 100%;
+    }
+
+    .no-left {
+        list-style-position: inside;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .final-box-text {
+        font-size: 5vw;
+    }
+
+    .final-box {
+        margin-bottom: 2vh !important;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .cardtwo {
+        padding-top: 0 !important;
+    }
+}
+

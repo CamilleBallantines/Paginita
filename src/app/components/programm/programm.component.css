@@ -6,7 +6,10 @@
 }
 
 .program-title {
+    margin: 50px;
     background-color: #156a86;
+    height: 12vh;
+    width: 20vw;
 }
 
 .special-title {
@@ -15,4 +18,20 @@
     position: absolute; 
     top: -2vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal {
+    overflow: auto;
+}
+
+@media (max-width: 770px) {
+    .programm-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .program-title {
+        width: 300px;
+    }
 }

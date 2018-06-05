@@ -1,17 +1,17 @@
 <div class="container-fluid home-container paginita-container">
   <div class="row">
     <div class="col-12">
-      <div class="container">
+      <div class="container-fluid carrusel">
         <!--Carousel-->
-          <mdb-carousel [isControls]="true" [animation]="'slide'">
+          <mdb-carousel class="carrusel" [isControls]="true" [animation]="'slide'">
             <mdb-slide>
-                <img class="d-block w-100" src="../../../assets/images/wallpaper1.jpg" style="height: 59vh">
+                <img class="d-block w-100" src="../../../assets/images/wallpaper1.jpg" draggable="false">
             </mdb-slide>
             <mdb-slide>
-                <img class="d-block w-100" src="../../../assets/images/wallpaper2.jpg" style="height: 59vh">
+                <img class="d-block w-100" src="../../../assets/images/wallpaper2.jpg" draggable="false">
             </mdb-slide>
             <mdb-slide>
-                <img class="d-block w-100" src="../../../assets/images/wallpaper3.jpg" style="height: 59vh">
+                <img class="d-block w-100" src="../../../assets/images/wallpaper3.jpg" draggable="false">
             </mdb-slide>
           </mdb-carousel>
         <!--/.Carousel-->
@@ -19,7 +19,7 @@
 
     <div class="container-fluid">
         <div class="choose-area text-center">
-          <h1><b>Choose your area of interest</b></h1>
+          <h1 class="choose"><b>Choose your area of interest</b></h1>
         </div>
       <hr style="width: 40vw; margin-top:3vh; height:1px; border:none; color:#333; background-color:#333;">
       <hr style="width: 36vw; margin-top:3vh; height:1px; border:none; color:#333; background-color:#333;">
@@ -62,7 +62,7 @@
             <br>
               <div class="container text-center" style="padding-bottom: 5vh;">
                 <div class="row justify-content-center">
-                    <div class="col-8">
+                    <div class="col-10">
                       <app-cards></app-cards>
                     </div>
                 </div>
