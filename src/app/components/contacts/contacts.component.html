@@ -19,7 +19,27 @@
     </div>
     <br>
     <br>
-    <div>
+
+<!--Vertical Tabs-->
+    <div class="small-options" style="display: none;">
+    <p class="text-center" style="font-size: 22px; font-weight: 350"><i>"I'm interested in..."</i></p>
+        <hr>
+        <tabset [vertical]="true" type="pills" class="contacts-pills">
+                <hr>
+            <tab heading="English Lessons">
+                <app-form-lessons></app-form-lessons>
+            </tab>
+            <tab heading="Translation">
+                <app-form-translation></app-form-translation>
+            </tab>
+            <tab heading="General Information">
+                <app-form-general></app-form-general>
+            </tab>
+          </tabset>
+    </div>
+
+
+    <div class="big-options">
         <tabset class="contacts-titles">
             <!--English Lessons Tab-->
             <tab heading="English Lessons" id="tab1" class="contacts-titles">
