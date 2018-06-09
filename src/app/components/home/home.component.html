@@ -3,134 +3,136 @@
     <div class="col-12">
       <div class="container-fluid carrusel">
         <!--Carousel-->
-          <mdb-carousel class="carrusel" [isControls]="true" [animation]="'slide'">
-            <mdb-slide>
-                <img class="d-block w-100" src="../../../assets/images/wallpaper1.jpg" draggable="false">
-            </mdb-slide>
-            <mdb-slide>
-                <img class="d-block w-100" src="../../../assets/images/wallpaper2.jpg" draggable="false">
-            </mdb-slide>
-            <mdb-slide>
-                <img class="d-block w-100" src="../../../assets/images/wallpaper3.jpg" draggable="false">
-            </mdb-slide>
-          </mdb-carousel>
+        <mdb-carousel class="carrusel" [isControls]="true" [animation]="'slide'">
+          <mdb-slide>
+            <img class="d-block w-100" src="../../../assets/images/wallpaper1.jpg" draggable="false">
+          </mdb-slide>
+          <mdb-slide>
+            <img class="d-block w-100" src="../../../assets/images/wallpaper2.jpg" draggable="false">
+          </mdb-slide>
+          <mdb-slide>
+            <img class="d-block w-100" src="../../../assets/images/wallpaper3.jpg" draggable="false">
+          </mdb-slide>
+        </mdb-carousel>
         <!--/.Carousel-->
-        </div>
+      </div>
 
-    <div class="container-fluid">
+      <div class="container-fluid">
         <div class="choose-area text-center">
-          <h1 class="choose"><b>Choose your area of interest</b></h1>
+          <h1 class="choose">
+            <b>Choose your area of interest</b>
+          </h1>
         </div>
-      <hr style="width: 40vw; margin-top:3vh; height:1px; border:none; color:#333; background-color:#333;">
-      <hr style="width: 36vw; margin-top:3vh; height:1px; border:none; color:#333; background-color:#333;">
-    </div>
+        <hr style="width: 40vw; margin-top:3vh; height:1px; border:none; color:#333; background-color:#333;">
+        <hr style="width: 36vw; margin-top:3vh; height:1px; border:none; color:#333; background-color:#333;">
+      </div>
 
 
-    <!--BUTTONS <button type="button" class="btn inicial-button" mdbWavesEffect>English Lessons</button>
+      <!--BUTTONS <button type="button" class="btn inicial-button" mdbWavesEffect>English Lessons</button>
                 <button type="button" class="btn inicial-button" mdbWavesEffect>Translation</button>
     -->
 
-    <div class="row justify-content-center" style="margin-top: 5vh;">
-      <div class="container col-lg-6 col-md-12 inicial-button-div">
+      <div class="row justify-content-center" style="margin-top: 5vh;">
+        <div class="container col-lg-6 col-md-12 inicial-button-div">
           <button type="button" (click)="scrollToElement('english-lesson')" class="btn inicial-button" mdbWavesEffect>English Lessons</button>
+        </div>
+        <div class="container col-lg-6 col-md-12 inicial-button-div">
+          <button type="button" (click)="scrollToElement('english-translation')" class="btn inicial-button" mdbWavesEffect>Translation</button>
+        </div>
       </div>
-      <div class="container col-lg-6 col-md-12 inicial-button-div">
-          <button type="button" (click)="scrollToElement('english-translation')"  class="btn inicial-button" mdbWavesEffect>Translation</button>
-      </div>
-    </div>
 
 
-<!--Prueba HOME-->
+      <!--Prueba HOME-->
 
-    <div class="container" style="padding-top: 10vh;" id='english-lesson'>
-      <!--Lessons-->
+      <div class="container" style="padding-top: 10vh;" id='english-lesson'>
+        <!--Lessons-->
         <div class="lessons-information example z-depth-2 text-center" style="margin-bottom: 8vh">
 
-              <div class="new-lessons-title example z-depth-2" style="display: none">
-                <br>
-                <h1 class="english-lessons-title">English lessons</h1>
-              </div>
-
-              <p class="english-lessons-text">
-                  Follow structured plans designed specifically for English improvement, depending on the age and needs each student/client has. Taking a first look into your
-                  English level you will be asign tasks to develop the main techniques when learning any language which are: Reading, Listening, Writting and Speaking.
-                  <br>
-                  <br>
-                  With these online lessons you can get exactly what you want from the comfort of your home at the time of your preference!
-              </p>
-            <hr style="width: 30vw; height:1px; border:none; color:#333; background-color:#333;">
+          <div class="new-lessons-title example z-depth-2" style="display: none">
             <br>
-              <div class="container text-center" style="padding-bottom: 5vh;">
-                <div class="row justify-content-center">
-                    <div class="col-10" style="padding-left: 0">
-                      <app-cards></app-cards>
-                    </div>
-                </div>
-              </div>
+            <h1 class="english-lessons-title">English lessons</h1>
+          </div>
 
-            <div class="lessons-title example z-depth-2" style="border-radius: 4px">
-              <br>
-              <h1 class="english-lessons-title">English lessons</h1>
+          <p class="english-lessons-text">
+            Follow structured plans designed specifically for English improvement, depending on the age and needs each student/client
+            has. Taking a first look into your English level you will be asign tasks to develop the main techniques when
+            learning any language which are: Reading, Listening, Writting and Speaking.
+            <br>
+            <br> With these online lessons you can get exactly what you want from the comfort of your home at the time of your
+            preference!
+          </p>
+          <hr style="width: 30vw; height:1px; border:none; color:#333; background-color:#333;">
+          <br>
+          <div class="container text-center" style="padding-bottom: 5vh;">
+            <div class="row justify-content-center">
+              <div class="col-10" style="padding-left: 0">
+                <app-cards></app-cards>
+              </div>
             </div>
+          </div>
+
+          <div class="lessons-title example z-depth-2" style="border-radius: 4px">
+            <br>
+            <h1 class="english-lessons-title">English lessons</h1>
+          </div>
         </div>
+
+      </div>
 
       <!--Translation-->
 
-        <div class="lessons-information example z-depth-2 text-center" id='english-translation'>
+      <div class="lessons-information example z-depth-2 text-center" id='english-translation'>
 
-              <div class="new-translation-title example z-depth-2" style="display: none">
-                <br>
-                <h1 class="english-lessons-title">Translation</h1>
-              </div>
-
-            <p class="english-lessons-text">
-                Obtain your desired translations ready whenever you need them, with professionalism and accuracy. Specialized in the Spanish-English and English-Spanish
-                translation and in any type of document, these translations are charged for the amount of words and time spent on them. Transform your work and papers
-                internationally and expand yourself.
-                <br>
-                <br>
-                Get your projects and your works done with guarantee of success in short period of times, when you want it like you want it!
-            </p>
-          <hr style="width: 30vw; height:1px; border:none; color:#333; background-color:#333;">
+        <div class="new-translation-title example z-depth-2" style="display: none">
           <br>
+          <h1 class="english-lessons-title">Translation</h1>
+        </div>
 
-            <!--Translation examples-->
-
-              <div class="row justify-content-center">
-                <div>
-                  <button class="buttons">
-                      <i class="fas fa-book"></i>
-                  </button>
-                </div>
-                <div>
-                    <button class="buttons">
-                      <i class="fas fa-closed-captioning"></i>
-                    </button>
-                </div>
-                <div>
-                    <button class="buttons">
-                      <i class="fas fa-file"> </i>
-                    </button>
-                </div>
-              </div>
-
-            <!--End of examples-->
-
+        <p class="english-lessons-text">
+          Obtain your desired translations ready whenever you need them, with professionalism and accuracy. Specialized in the Spanish-English
+          and English-Spanish translation and in any type of document, these translations are charged for the amount of words
+          and time spent on them. Transform your work and papers internationally and expand yourself.
           <br>
-          <div class="container">
-              <a class="btn waves-light" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white" routerLink="/contact">Contact me...</a>
+          <br> Get your projects and your works done with guarantee of success in short period of times, when you want it like
+          you want it!
+        </p>
+        <hr style="width: 30vw; height:1px; border:none; color:#333; background-color:#333;">
+        <br>
+
+        <!--Translation examples-->
+
+        <div class="row justify-content-center">
+          <div>
+            <button class="buttons">
+              <i class="fas fa-book"></i>
+            </button>
           </div>
-          <br>
-
-          <div class="translation-title example z-depth-2" style="border-radius: 4px">
-            <br>
-            <h1 class="english-lessons-title">Translation</h1>
+          <div>
+            <button class="buttons">
+              <i class="fas fa-closed-captioning"></i>
+            </button>
           </div>
+          <div>
+            <button class="buttons">
+              <i class="fas fa-file"> </i>
+            </button>
+          </div>
+        </div>
+
+        <!--End of examples-->
+
+        <br>
+        <div class="container">
+          <a class="btn waves-light" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white" routerLink="/contact">Contact me...</a>
+        </div>
+        <br>
+
+        <div class="translation-title example z-depth-2" style="border-radius: 4px">
+          <br>
+          <h1 class="english-lessons-title">Translation</h1>
+        </div>
       </div>
 
-
+      <!--Fin Prueba HOME-->
     </div>
-
-<!--Fin Prueba HOME-->
   </div>
-</div>
