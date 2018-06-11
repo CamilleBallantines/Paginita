@@ -23,6 +23,22 @@
     font-weight: 400;
 }
 
+.small-options{
+    display: none;
+}
+
+.button-pill{
+    cursor: pointer;
+    background: #FBFBFB;
+    color: black;
+    transition: 0.5 color ease-in-out;
+}
+
+.button-pill.active{
+    background: #04417a;
+    color: white
+}
+
 @media (max-width:1200px) {
     .invitation{
         transition:  width 2s, height 1s, transform 2s;
