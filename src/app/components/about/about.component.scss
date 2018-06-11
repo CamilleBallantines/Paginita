@@ -10,8 +10,8 @@
     margin-bottom: 4vh;
     margin-left: 2vw; 
     margin-right: 2vw; 
-    background-color: white;
-    border: 1px solid rgb(233, 233, 233);
+    /*background-color: white;
+    border: 1px solid rgb(233, 233, 233); */
 }
 
 .view img {
@@ -78,3 +78,8 @@
     }
 }
 
+@media (min-width: 3300px) {
+    .view img {
+        height: 50vh;
+    }
+}

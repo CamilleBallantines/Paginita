@@ -15,10 +15,10 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <!--Card 1-->
 
-            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="grammarform.show()">
+<!-- -->    <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="grammarform.show()">
 
                 <!--Card image-->
-                <div class="view hm-white-slight waves-light" style="cursor: pointer">
+<!-- -->        <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../../assets/images/books.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -28,7 +28,7 @@
                     <h4 class="card-title">Grammar</h4>
                     <!--Text-->
                     <p class="card-text">Follow the programm structure to learn grammatic abilities and rules.</p>
-                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
+<!-- -->            <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
                 </div>
 
             </div>
@@ -96,10 +96,10 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
             <!--Card 2-->
-            <div class="card" style="margin-bottom: 4vh">
+            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="vocabularyform.show()">
 
                 <!--Card image-->
-                <div class="view hm-white-slight waves-light">
+                <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../assets/images/vocabulary.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -109,8 +109,11 @@
                     <h4 class="card-title">Vocabulary</h4>
                     <!--Text-->
                     <p class="card-text">Learn how to express yourself with every word needed for each situation in your everyday life.</p>
-                    <a class="btn waves-light" (click)="vocabularyform.show()" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white">Open program</a>
+                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
 
+                </div>
+
+            </div>
                     <!--Modal: Contact form-->
                     <div mdbModal #vocabularyform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
@@ -171,17 +174,13 @@
                         </div>
                     </div>
                     <!--Modal: Contact form-->
-
-                </div>
-
-            </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
             <!--Card 3-->
-            <div class="card" style="margin-bottom: 4vh">
+            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="speakingform.show()">
 
                 <!--Card image-->
-                <div class="view hm-white-slight waves-light">
+                <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../assets/images/speaking.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -191,7 +190,11 @@
                     <h4 class="card-title">Basic Speaking</h4>
                     <!--Text-->
                     <p class="card-text">Develop the ability of talking to others as an English native speaker would.</p>
-                    <a class="btn waves-light" (click)="speakingform.show()" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white">Open program</a>
+                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
+
+                </div>
+
+            </div>
 
                     <!--Modal: Contact form-->
                     <div mdbModal #speakingform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -239,16 +242,14 @@
                         </div>
                     </div>
                     <!--Modal: Contact form-->
-                </div>
 
-            </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
             <!--Card 4-->
-            <div class="card" style="margin-bottom: 4vh">
+            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="greetingsform.show()">
 
                 <!--Card image-->
-                <div class="view hm-white-slight waves-light">
+                <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../assets/images/greeting.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -258,8 +259,10 @@
                     <h4 class="card-title">Greetings</h4>
                     <!--Text-->
                     <p class="card-text">Know the basics of meeting people, getting to know someone and hang out in the city.</p>
-                    <a class="btn waves-light" (click)="greetingsform.show()" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white">Open program</a>
+                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
+                </div>
 
+            </div>
                     <!--Modal: Contact form-->
                     <div mdbModal #greetingsform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
@@ -309,16 +312,14 @@
                     </div>
                     <!--Modal: Contact form-->
 
-                </div>
 
-            </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
             <!--Card 5-->
-            <div class="card" style="margin-bottom: 4vh">
+            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="specificform.show()">
 
                 <!--Card image-->
-                <div class="view hm-white-slight waves-light">
+                <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../assets/images/specific.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -328,8 +329,10 @@
                     <h4 class="card-title">Specific Topics</h4>
                     <!--Text-->
                     <p class="card-text">Learn how to act and what to say in specific everyday life situations.</p>
-                    <a class="btn waves-light" (click)="specificform.show()" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white">Open program</a>
+                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
+                </div>
 
+            </div>
                     <!--Modal: Contact form-->
                     <div mdbModal #specificform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
@@ -379,16 +382,14 @@
                     </div>
                     <!--Modal: Contact form-->
 
-                </div>
 
-            </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
             <!--Card 6-->
-            <div class="card" style="margin-bottom: 4vh">
+            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="businessform.show()">
 
                 <!--Card image-->
-                <div class="view hm-white-slight waves-light">
+                <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../assets/images/business.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -398,8 +399,10 @@
                     <h4 class="card-title">Business</h4>
                     <!--Text-->
                     <p class="card-text">Find out how to behave and talk in the office environment, with co-workes and bosses.</p>
-                    <a class="btn waves-light" (click)="businessform.show()" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white">Open program</a>
+                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
+                </div>
 
+            </div>
                     <!--Modal: Contact form-->
                     <div mdbModal #businessform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
@@ -451,16 +454,14 @@
                     </div>
                     <!--Modal: Contact form-->
 
-                </div>
 
-            </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
             <!--Card 7-->
-            <div class="card" style="margin-bottom: 4vh">
+            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="travelform.show()">
 
                 <!--Card image-->
-                <div class="view hm-white-slight waves-light">
+                <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../assets/images/travel.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -470,8 +471,10 @@
                     <h4 class="card-title">Travel</h4>
                     <!--Text-->
                     <p class="card-text">Know everything you need to know to survive while visiting another country.</p>
-                    <a class="btn waves-light" (click)="travelform.show()" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white">Open program</a>
+                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
+                </div>
 
+            </div>
                     <!--Modal: Contact form-->
                     <div mdbModal #travelform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
@@ -521,16 +524,14 @@
                     </div>
                     <!--Modal: Contact form-->
 
-                </div>
 
-            </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
             <!--Card 8-->
-            <div class="card" style="margin-bottom: 4vh">
+            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="interviewform.show()">
 
                 <!--Card image-->
-                <div class="view hm-white-slight waves-light">
+                <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../assets/images/interview.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -540,8 +541,10 @@
                     <h4 class="card-title">Interview Practice</h4>
                     <!--Text-->
                     <p class="card-text">Discover and exceed in the questions that will prepare you for your future job interviews.</p>
-                    <a class="btn waves-light" (click)="interviewform.show()" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white">Open program</a>
+                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
+                </div>
 
+            </div>
                     <!--Modal: Contact form-->
                     <div mdbModal #interviewform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
@@ -587,16 +590,14 @@
                     </div>
                     <!--Modal: Contact form-->
 
-                </div>
 
-            </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
             <!--Card 9-->
-            <div class="card" style="margin-bottom: 4vh">
+            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="idiomsform.show()">
 
                 <!--Card image-->
-                <div class="view hm-white-slight waves-light">
+                <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../assets/images/phrases.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -606,8 +607,10 @@
                     <h4 class="card-title">Phrases and Idioms</h4>
                     <!--Text-->
                     <p class="card-text">Learn colloquial expressions to understand and speak as a true native speaker.</p>
-                    <a class="btn waves-light" (click)="idiomsform.show()" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white">Open program</a>
+                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
+                </div>
 
+            </div>
                     <!--Modal: Contact form-->
                     <div mdbModal #idiomsform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
@@ -657,9 +660,7 @@
                     </div>
                     <!--Modal: Contact form-->
 
-                </div>
 
-            </div>
         </div>
     </div>
 
@@ -677,10 +678,10 @@
     <div class="row text-center">
         <div class="col-lg-6 col-md-6 col-sm-12">
             <!--Card 10-->
-            <div class="card" style="margin-bottom: 4vh">
+            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="activitiesform.show()">
 
                 <!--Card image-->
-                <div class="view hm-white-slight waves-light">
+                <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../assets/images/activities.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -690,8 +691,10 @@
                     <h4 class="card-title">Activities</h4>
                     <!--Text-->
                     <p class="card-text">See the list of activities you will do in each class and as homeworks during de lessons.</p>
-                    <a class="btn waves-light" (click)="activitiesform.show()" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white">Open program</a>
+                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
+                </div>
 
+            </div>
                     <!--Modal: Contact form-->
                     <div mdbModal #activitiesform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
@@ -740,16 +743,14 @@
                     </div>
                     <!--Modal: Contact form-->
 
-                </div>
 
-            </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
             <!--Card 11-->
-            <div class="card" style="margin-bottom: 4vh">
+            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="kidsform.show()">
 
                 <!--Card image-->
-                <div class="view hm-white-slight waves-light">
+                <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../assets/images/kids.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -761,8 +762,10 @@
                     <p class="card-text">Classes for the little ones that are currently learning their own language. Help them develop their second
                         language as soon as possible.
                     </p>
-                    <a class="btn waves-light" (click)="kidsform.show()" mdbWavesEffect style="background-color:  rgb(38, 48, 70); color: white">Open program</a>
+                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
+                </div>
 
+            </div>
                     <!--Modal: Contact form-->
                     <div mdbModal #kidsform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
@@ -806,9 +809,7 @@
                     </div>
                     <!--Modal: Contact form-->
 
-                </div>
 
-            </div>
         </div>
     </div>
 
