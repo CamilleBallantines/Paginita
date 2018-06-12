@@ -48,3 +48,13 @@
         padding-right: 2px; 
     }
 }
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+      .ipad-card {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+}

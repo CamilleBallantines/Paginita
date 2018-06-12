@@ -2,3 +2,8 @@
     margin: 0;
 }
 
+@media (min-width: 992px) {
+    .quote {
+        font-size: 2vh;
+    }
+}

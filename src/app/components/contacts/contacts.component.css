@@ -31,7 +31,7 @@
     cursor: pointer;
     background: #FBFBFB;
     color: black;
-    transition: 0.5 color ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .button-pill.active{

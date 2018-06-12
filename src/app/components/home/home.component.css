@@ -203,3 +203,9 @@
         width: 77vw;
     }
 }
+
+@media (min-width: 3200px) {
+    .linea {
+        width: 20vw !important;
+    }
+}

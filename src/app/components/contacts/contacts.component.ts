@@ -16,17 +16,7 @@ export class ContactsComponent implements OnInit {
     window.scrollTo(0, 0);
   }
   
-  private showForm( option: string ){
-    switch (option) {
-      case 'translation':
-        this.formState = 'translation'
-        break;
-      case 'general':
-        this.formState = 'general'
-        break;
-      default:
-        this.formState = 'lessons'
-        break;
-    }
+  showForm(option) {
+    this.formState = option
   }
 }
