@@ -2,10 +2,8 @@
 
     <div class="row text-center justify-content-center" style="margin-bottom: 5vh;">
         <div>
-            <div class="program-title z-depth-2" style="border-radius: 4px">
-                <br>
-                <h1 style="color: white; font-weight: bold; font-size: 50px">Programs</h1>
-                <br>
+            <div class="program-title z-depth-2" style="border-radius: 4px; padding-top: 3vh; padding-bottom: 2vh">
+                <h1 style="color: white; font-weight: bold; font-size: 50px; margin-right: 2vw; margin-left: 2vw">Programs</h1>
             </div>
         </div>
     </div>
@@ -15,10 +13,12 @@
         <div class="col-lg-4 col-md-6 col-sm-12 ipad-card">
             <!--Card 1-->
 
-<!-- -->    <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="grammarform.show()">
+            <!-- -->
+            <div class="card program-cards" style="margin-bottom: 4vh; cursor: pointer;" (click)="grammarform.show()">
 
                 <!--Card image-->
-<!-- -->        <div class="view hm-white-slight waves-light" style="cursor: pointer">
+                <!-- -->
+                <div class="view hm-white-slight waves-light" style="cursor: pointer">
                     <img src="../../../../assets/images/books.jpg" class="img-fluid" draggable="false">
                 </div>
 
@@ -28,70 +28,71 @@
                     <h4 class="card-title">Grammar</h4>
                     <!--Text-->
                     <p class="card-text">Follow the programm structure to learn grammatic abilities and rules.</p>
-<!-- -->            <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
+                    <!-- -->
+                    <i class="fas fa-chevron-circle-down" style="font-size: 3vh; color: rgb(38, 48, 70)"></i>
                 </div>
 
             </div>
 
             <!--Modal: Contact form-->
             <div mdbModal #grammarform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog cascading-modal" role="document">
-                <!--Content-->
-                <div class="modal-content">
+                aria-hidden="true">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                    <!--Header-->
-                    <div class="modal-header white-text" style="background-color: #156a86">
-                        <h1 class="title">
-                            <b>Grammar Program</b>
-                        </h1>
-                    </div>
-                    <!--Body-->
-                    <div class="modal-body mb-0" style="text-align:left">
-
-                        <div class="container-fluid row">
-                            <div class="col-lg-6 col-md-12">
-                                <ul style="margin: 5px">
-                                    <li>Alphabet</li>
-                                    <li>Articles</li>
-                                    <li>Count and Non Count Nouns</li>
-                                    <li>Possessive Nouns</li>
-                                    <li>Pronouns</li>
-                                    <li>Verbs</li>
-                                    <li>Adjectives</li>
-                                    <li>Comparative and Superlative</li>
-                                    <li>Adverbs</li>
-                                    <li>Simple Tense</li>
-                                    <li>Progressive Tense</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <ul style="margin: 5px">
-                                    <li>Perfect Tense</li>
-                                    <li>Perfect Progressive Tense</li>
-                                    <li>Irregular Verbs</li>
-                                    <li>Gerunds</li>
-                                    <li>Infinitives</li>
-                                    <li>Active Voice</li>
-                                    <li>Passive Voice</li>
-                                    <li>Indicative</li>
-                                    <li>Imperative</li>
-                                    <li>Others</li>
-                                </ul>
-                            </div>
+                        <!--Header-->
+                        <div class="modal-header white-text" style="background-color: #156a86">
+                            <h1 class="title">
+                                <b>Grammar Program</b>
+                            </h1>
                         </div>
+                        <!--Body-->
+                        <div class="modal-body mb-0" style="text-align:left">
+
+                            <div class="container-fluid row">
+                                <div class="col-lg-6 col-md-12">
+                                    <ul style="margin: 5px">
+                                        <li>Alphabet</li>
+                                        <li>Articles</li>
+                                        <li>Count and Non Count Nouns</li>
+                                        <li>Possessive Nouns</li>
+                                        <li>Pronouns</li>
+                                        <li>Verbs</li>
+                                        <li>Adjectives</li>
+                                        <li>Comparative and Superlative</li>
+                                        <li>Adverbs</li>
+                                        <li>Simple Tense</li>
+                                        <li>Progressive Tense</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <ul style="margin: 5px">
+                                        <li>Perfect Tense</li>
+                                        <li>Perfect Progressive Tense</li>
+                                        <li>Irregular Verbs</li>
+                                        <li>Gerunds</li>
+                                        <li>Infinitives</li>
+                                        <li>Active Voice</li>
+                                        <li>Passive Voice</li>
+                                        <li>Indicative</li>
+                                        <li>Imperative</li>
+                                        <li>Others</li>
+                                    </ul>
+                                </div>
+                            </div>
 
 
-                        <div class="text-center mt-1-half" style="margin-top: 2vh">
-                            <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="grammarform.hide()" style="background-color: rgb(38, 48, 70)">
-                                Close</button>
+                            <div class="text-center mt-1-half" style="margin-top: 2vh">
+                                <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="grammarform.hide()" style="background-color: rgb(38, 48, 70)">
+                                    Close</button>
+                            </div>
+
                         </div>
-
                     </div>
                 </div>
             </div>
-            </div>
-        <!--Modal: Contact form-->
+            <!--Modal: Contact form-->
 
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 ipad-card">
@@ -114,66 +115,66 @@
                 </div>
 
             </div>
-                    <!--Modal: Contact form-->
-                    <div mdbModal #vocabularyform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog cascading-modal" role="document">
-                            <!--Content-->
-                            <div class="modal-content">
+            <!--Modal: Contact form-->
+            <div mdbModal #vocabularyform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                                <!--Header-->
-                                <div class="modal-header white-text" style="background-color: #156a86">
-                                    <h1 class="title">
-                                        <b>Vocabulary Program</b>
-                                    </h1>
+                        <!--Header-->
+                        <div class="modal-header white-text" style="background-color: #156a86">
+                            <h1 class="title">
+                                <b>Vocabulary Program</b>
+                            </h1>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mb-0" style="text-align:left">
+
+                            <div class="container-fluid row">
+                                <div class="col-lg-6 col-md-12">
+
+                                    <ul style="margin: 5px">
+                                        <li>Colors</li>
+                                        <li>Routines</li>
+                                        <li>Days, Months and Seasons</li>
+                                        <li>House</li>
+                                        <li>Animals</li>
+                                        <li>Family Members</li>
+                                        <li>Food</li>
+                                        <li>Free Time Activities</li>
+                                        <li>Nationalities</li>
+                                        <li>Verbs</li>
+                                        <li>Parts of the Body</li>
+                                    </ul>
                                 </div>
-                                <!--Body-->
-                                <div class="modal-body mb-0" style="text-align:left">
-
-                                    <div class="container-fluid row">
-                                        <div class="col-lg-6 col-md-12">
-
-                                            <ul style="margin: 5px">
-                                                <li>Colors</li>
-                                                <li>Routines</li>
-                                                <li>Days, Months and Seasons</li>
-                                                <li>House</li>
-                                                <li>Animals</li>
-                                                <li>Family Members</li>
-                                                <li>Food</li>
-                                                <li>Free Time Activities</li>
-                                                <li>Nationalities</li>
-                                                <li>Verbs</li>
-                                                <li>Parts of the Body</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <ul style="margin: 5px">
-                                                <li>Adjectives</li>
-                                                <li>Places in a City</li>
-                                                <li>Professions</li>
-                                                <li>Time and Weather</li>
-                                                <li>Cooking</li>
-                                                <li>Feelings and Emotions</li>
-                                                <li>Health</li>
-                                                <li>Hotels</li>
-                                                <li>Sports</li>
-                                                <li>Yearly Events</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="text-center mt-1-half" style="margin-top: 2vh">
-                                        <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="vocabularyform.hide()" style="background-color: rgb(38, 48, 70)">
-                                            Close</button>
-                                    </div>
-
+                                <div class="col-lg-6 col-md-12">
+                                    <ul style="margin: 5px">
+                                        <li>Adjectives</li>
+                                        <li>Places in a City</li>
+                                        <li>Professions</li>
+                                        <li>Time and Weather</li>
+                                        <li>Cooking</li>
+                                        <li>Feelings and Emotions</li>
+                                        <li>Health</li>
+                                        <li>Hotels</li>
+                                        <li>Sports</li>
+                                        <li>Yearly Events</li>
+                                    </ul>
                                 </div>
                             </div>
+
+
+                            <div class="text-center mt-1-half" style="margin-top: 2vh">
+                                <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="vocabularyform.hide()" style="background-color: rgb(38, 48, 70)">
+                                    Close</button>
+                            </div>
+
                         </div>
                     </div>
-                    <!--Modal: Contact form-->
+                </div>
+            </div>
+            <!--Modal: Contact form-->
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 ipad-card">
             <!--Card 3-->
@@ -196,52 +197,52 @@
 
             </div>
 
-                    <!--Modal: Contact form-->
-                    <div mdbModal #speakingform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog cascading-modal" role="document">
-                            <!--Content-->
-                            <div class="modal-content">
+            <!--Modal: Contact form-->
+            <div mdbModal #speakingform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                                <!--Header-->
-                                <div class="modal-header white-text" style="background-color: #156a86">
-                                    <h1 class="title">
-                                        <b>Basic Speaking Program</b>
-                                    </h1>
-                                </div>
-                                <!--Body-->
-                                <div class="modal-body mb-0" style="text-align:left">
+                        <!--Header-->
+                        <div class="modal-header white-text" style="background-color: #156a86">
+                            <h1 class="title">
+                                <b>Basic Speaking Program</b>
+                            </h1>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mb-0" style="text-align:left">
 
-                                    <div class="container-fluid row">
-                                        <div class="col-12">
+                            <div class="container-fluid row">
+                                <div class="col-12">
 
-                                            <p style="margin: 5px">
-                                                This program teaches you around 30 expressions English speakers use on their everyday basis and that will help you talk fluent
-                                                and natural.
-                                                <br> Examples:
-                                            </p>
+                                    <p style="margin: 5px">
+                                        This program teaches you around 30 expressions English speakers use on their everyday basis and that will help you talk fluent
+                                        and natural.
+                                        <br> Examples:
+                                    </p>
 
-                                            <ul style="margin-top: 2vh">
-                                                <li>I'm good at</li>
-                                                <li>I used to</li>
-                                                <li>I can't help</li>
-                                                <li>I'm dying to</li>
-                                                <li>How come</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="text-center mt-1-half" style="margin-top: 2vh">
-                                        <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="speakingform.hide()" style="background-color: rgb(38, 48, 70)">
-                                            Close</button>
-                                    </div>
-
+                                    <ul style="margin-top: 2vh">
+                                        <li>I'm good at</li>
+                                        <li>I used to</li>
+                                        <li>I can't help</li>
+                                        <li>I'm dying to</li>
+                                        <li>How come</li>
+                                    </ul>
                                 </div>
                             </div>
+
+
+                            <div class="text-center mt-1-half" style="margin-top: 2vh">
+                                <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="speakingform.hide()" style="background-color: rgb(38, 48, 70)">
+                                    Close</button>
+                            </div>
+
                         </div>
                     </div>
-                    <!--Modal: Contact form-->
+                </div>
+            </div>
+            <!--Modal: Contact form-->
 
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 ipad-card">
@@ -263,54 +264,54 @@
                 </div>
 
             </div>
-                    <!--Modal: Contact form-->
-                    <div mdbModal #greetingsform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog cascading-modal" role="document">
-                            <!--Content-->
-                            <div class="modal-content">
+            <!--Modal: Contact form-->
+            <div mdbModal #greetingsform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                                <!--Header-->
-                                <div class="modal-header white-text" style="background-color: #156a86">
-                                    <h1 class="title">
-                                        <b>Greetings Program</b>
-                                    </h1>
-                                </div>
-                                <!--Body-->
-                                <div class="modal-body mb-0" style="text-align:left">
+                        <!--Header-->
+                        <div class="modal-header white-text" style="background-color: #156a86">
+                            <h1 class="title">
+                                <b>Greetings Program</b>
+                            </h1>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mb-0" style="text-align:left">
 
-                                    <div class="container-fluid row">
-                                        <div class="col-12">
+                            <div class="container-fluid row">
+                                <div class="col-12">
 
-                                            <p style="margin: 5px">
-                                                This program helps you to interact with others about everyday topics, we will learn to:
-                                            </p>
+                                    <p style="margin: 5px">
+                                        This program helps you to interact with others about everyday topics, we will learn to:
+                                    </p>
 
-                                            <ul style="margin-top: 2vh">
-                                                <li>Get to know new people</li>
-                                                <li>Talk about your day</li>
-                                                <li>Make future plans</li>
-                                                <li>Talk about your previous days</li>
-                                                <li>Talk about the weather</li>
-                                                <li>Small talk</li>
-                                                <li>Talk bout your likes and dislikes</li>
-                                                <li>Your hobbies</li>
-                                                <li>Activities you are into</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="text-center mt-1-half" style="margin-top: 2vh">
-                                        <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="greetingsform.hide()" style="background-color: rgb(38, 48, 70)">
-                                            Close</button>
-                                    </div>
-
+                                    <ul style="margin-top: 2vh">
+                                        <li>Get to know new people</li>
+                                        <li>Talk about your day</li>
+                                        <li>Make future plans</li>
+                                        <li>Talk about your previous days</li>
+                                        <li>Talk about the weather</li>
+                                        <li>Small talk</li>
+                                        <li>Talk bout your likes and dislikes</li>
+                                        <li>Your hobbies</li>
+                                        <li>Activities you are into</li>
+                                    </ul>
                                 </div>
                             </div>
+
+
+                            <div class="text-center mt-1-half" style="margin-top: 2vh">
+                                <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="greetingsform.hide()" style="background-color: rgb(38, 48, 70)">
+                                    Close</button>
+                            </div>
+
                         </div>
                     </div>
-                    <!--Modal: Contact form-->
+                </div>
+            </div>
+            <!--Modal: Contact form-->
 
 
         </div>
@@ -333,54 +334,54 @@
                 </div>
 
             </div>
-                    <!--Modal: Contact form-->
-                    <div mdbModal #specificform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog cascading-modal" role="document">
-                            <!--Content-->
-                            <div class="modal-content">
+            <!--Modal: Contact form-->
+            <div mdbModal #specificform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                                <!--Header-->
-                                <div class="modal-header white-text" style="background-color: #156a86">
-                                    <h1 class="title">
-                                        <b>Specific Topics Program</b>
-                                    </h1>
-                                </div>
-                                <!--Body-->
-                                <div class="modal-body mb-0" style="text-align:left">
+                        <!--Header-->
+                        <div class="modal-header white-text" style="background-color: #156a86">
+                            <h1 class="title">
+                                <b>Specific Topics Program</b>
+                            </h1>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mb-0" style="text-align:left">
 
-                                    <div class="container-fluid row">
-                                        <div class="col-12">
+                            <div class="container-fluid row">
+                                <div class="col-12">
 
-                                            <p style="margin: 5px">
-                                                This program is about preparing you to deal with specific situations in your life such as:
-                                            </p>
+                                    <p style="margin: 5px">
+                                        This program is about preparing you to deal with specific situations in your life such as:
+                                    </p>
 
-                                            <ul style="margin-top: 2vh">
-                                                <li>College</li>
-                                                <li>Roommates</li>
-                                                <li>Smoking and Drinking</li>
-                                                <li>Health and Dieting</li>
-                                                <li>Dating and Relationships</li>
-                                                <li>Sports in general</li>
-                                                <li>Shopping</li>
-                                                <li>Emotions</li>
-                                                <li>Family and Friends</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="text-center mt-1-half" style="margin-top: 2vh">
-                                        <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="specificform.hide()" style="background-color: rgb(38, 48, 70)">
-                                            Close</button>
-                                    </div>
-
+                                    <ul style="margin-top: 2vh">
+                                        <li>College</li>
+                                        <li>Roommates</li>
+                                        <li>Smoking and Drinking</li>
+                                        <li>Health and Dieting</li>
+                                        <li>Dating and Relationships</li>
+                                        <li>Sports in general</li>
+                                        <li>Shopping</li>
+                                        <li>Emotions</li>
+                                        <li>Family and Friends</li>
+                                    </ul>
                                 </div>
                             </div>
+
+
+                            <div class="text-center mt-1-half" style="margin-top: 2vh">
+                                <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="specificform.hide()" style="background-color: rgb(38, 48, 70)">
+                                    Close</button>
+                            </div>
+
                         </div>
                     </div>
-                    <!--Modal: Contact form-->
+                </div>
+            </div>
+            <!--Modal: Contact form-->
 
 
         </div>
@@ -403,56 +404,56 @@
                 </div>
 
             </div>
-                    <!--Modal: Contact form-->
-                    <div mdbModal #businessform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog cascading-modal" role="document">
-                            <!--Content-->
-                            <div class="modal-content">
+            <!--Modal: Contact form-->
+            <div mdbModal #businessform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                                <!--Header-->
-                                <div class="modal-header white-text" style="background-color: #156a86">
-                                    <h1 class="title">
-                                        <b>Business Program</b>
-                                    </h1>
-                                </div>
-                                <!--Body-->
-                                <div class="modal-body mb-0" style="text-align:left">
+                        <!--Header-->
+                        <div class="modal-header white-text" style="background-color: #156a86">
+                            <h1 class="title">
+                                <b>Business Program</b>
+                            </h1>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mb-0" style="text-align:left">
 
-                                    <div class="container-fluid row">
-                                        <div class="col-12">
+                            <div class="container-fluid row">
+                                <div class="col-12">
 
-                                            <p style="margin: 5px">
-                                                In this program you are shown how to interact in your job.
-                                            </p>
+                                    <p style="margin: 5px">
+                                        In this program you are shown how to interact in your job.
+                                    </p>
 
-                                            <ul style="margin-top: 2vh">
-                                                <li>Office basics</li>
-                                                <li>Not going or Getting late</li>
-                                                <li>Computer basics</li>
-                                                <li>E-mails</li>
-                                                <li>Presentations</li>
-                                                <li>Meetings</li>
-                                                <li>Phone calls</li>
-                                                <li>Talking to co-workes, the boss and subordinates</li>
-                                                <li>Business trips</li>
-                                                <li>Reviews</li>
-                                                <li>Quitting</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="text-center mt-1-half" style="margin-top: 2vh">
-                                        <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="businessform.hide()" style="background-color: rgb(38, 48, 70)">
-                                            Close</button>
-                                    </div>
-
+                                    <ul style="margin-top: 2vh">
+                                        <li>Office basics</li>
+                                        <li>Not going or Getting late</li>
+                                        <li>Computer basics</li>
+                                        <li>E-mails</li>
+                                        <li>Presentations</li>
+                                        <li>Meetings</li>
+                                        <li>Phone calls</li>
+                                        <li>Talking to co-workes, the boss and subordinates</li>
+                                        <li>Business trips</li>
+                                        <li>Reviews</li>
+                                        <li>Quitting</li>
+                                    </ul>
                                 </div>
                             </div>
+
+
+                            <div class="text-center mt-1-half" style="margin-top: 2vh">
+                                <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="businessform.hide()" style="background-color: rgb(38, 48, 70)">
+                                    Close</button>
+                            </div>
+
                         </div>
                     </div>
-                    <!--Modal: Contact form-->
+                </div>
+            </div>
+            <!--Modal: Contact form-->
 
 
         </div>
@@ -475,54 +476,54 @@
                 </div>
 
             </div>
-                    <!--Modal: Contact form-->
-                    <div mdbModal #travelform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog cascading-modal" role="document">
-                            <!--Content-->
-                            <div class="modal-content">
+            <!--Modal: Contact form-->
+            <div mdbModal #travelform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                                <!--Header-->
-                                <div class="modal-header white-text" style="background-color: #156a86">
-                                    <h1 class="title">
-                                        <b>Travel Program</b>
-                                    </h1>
-                                </div>
-                                <!--Body-->
-                                <div class="modal-body mb-0" style="text-align:left">
+                        <!--Header-->
+                        <div class="modal-header white-text" style="background-color: #156a86">
+                            <h1 class="title">
+                                <b>Travel Program</b>
+                            </h1>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mb-0" style="text-align:left">
 
-                                    <div class="container-fluid row">
-                                        <div class="col-12">
+                            <div class="container-fluid row">
+                                <div class="col-12">
 
-                                            <p style="margin: 5px">
-                                                This program prepares you to travel and become an expert when you are exploring other countries.
-                                            </p>
+                                    <p style="margin: 5px">
+                                        This program prepares you to travel and become an expert when you are exploring other countries.
+                                    </p>
 
-                                            <ul style="margin-top: 2vh">
-                                                <li>Airpot</li>
-                                                <li>Car Rental</li>
-                                                <li>Hotel</li>
-                                                <li>Directions</li>
-                                                <li>Restaurant</li>
-                                                <li>Stores</li>
-                                                <li>Talking to Strangers</li>
-                                                <li>Problems</li>
-                                                <li>Basic Idioms and Phrases</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="text-center mt-1-half" style="margin-top: 2vh">
-                                        <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="travelform.hide()" style="background-color: rgb(38, 48, 70)">
-                                            Close</button>
-                                    </div>
-
+                                    <ul style="margin-top: 2vh">
+                                        <li>Airpot</li>
+                                        <li>Car Rental</li>
+                                        <li>Hotel</li>
+                                        <li>Directions</li>
+                                        <li>Restaurant</li>
+                                        <li>Stores</li>
+                                        <li>Talking to Strangers</li>
+                                        <li>Problems</li>
+                                        <li>Basic Idioms and Phrases</li>
+                                    </ul>
                                 </div>
                             </div>
+
+
+                            <div class="text-center mt-1-half" style="margin-top: 2vh">
+                                <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="travelform.hide()" style="background-color: rgb(38, 48, 70)">
+                                    Close</button>
+                            </div>
+
                         </div>
                     </div>
-                    <!--Modal: Contact form-->
+                </div>
+            </div>
+            <!--Modal: Contact form-->
 
 
         </div>
@@ -545,50 +546,50 @@
                 </div>
 
             </div>
-                    <!--Modal: Contact form-->
-                    <div mdbModal #interviewform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog cascading-modal" role="document">
-                            <!--Content-->
-                            <div class="modal-content">
+            <!--Modal: Contact form-->
+            <div mdbModal #interviewform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                                <!--Header-->
-                                <div class="modal-header white-text" style="background-color: #156a86">
-                                    <h1 class="title">
-                                        <b>Interview Practice Program</b>
-                                    </h1>
-                                </div>
-                                <!--Body-->
-                                <div class="modal-body mb-0" style="text-align:left">
+                        <!--Header-->
+                        <div class="modal-header white-text" style="background-color: #156a86">
+                            <h1 class="title">
+                                <b>Interview Practice Program</b>
+                            </h1>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mb-0" style="text-align:left">
 
-                                    <div class="container-fluid row">
-                                        <div class="col-12">
+                            <div class="container-fluid row">
+                                <div class="col-12">
 
-                                            <p style="margin: 5px">
-                                                This program will get you ready for that interview that will change your life and get hired.
-                                            </p>
+                                    <p style="margin: 5px">
+                                        This program will get you ready for that interview that will change your life and get hired.
+                                    </p>
 
-                                            <ul style="margin-top: 2vh">
-                                                <li>Basic Interview Questions</li>
-                                                <li>School Interview Questions</li>
-                                                <li>Work Interview Questions</li>
-                                                <li>Working with People Questions</li>
-                                                <li>Other Specific Questions</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="text-center mt-1-half" style="margin-top: 2vh">
-                                        <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="interviewform.hide()" style="background-color: rgb(38, 48, 70)">
-                                            Close</button>
-                                    </div>
-
+                                    <ul style="margin-top: 2vh">
+                                        <li>Basic Interview Questions</li>
+                                        <li>School Interview Questions</li>
+                                        <li>Work Interview Questions</li>
+                                        <li>Working with People Questions</li>
+                                        <li>Other Specific Questions</li>
+                                    </ul>
                                 </div>
                             </div>
+
+
+                            <div class="text-center mt-1-half" style="margin-top: 2vh">
+                                <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="interviewform.hide()" style="background-color: rgb(38, 48, 70)">
+                                    Close</button>
+                            </div>
+
                         </div>
                     </div>
-                    <!--Modal: Contact form-->
+                </div>
+            </div>
+            <!--Modal: Contact form-->
 
 
         </div>
@@ -611,54 +612,54 @@
                 </div>
 
             </div>
-                    <!--Modal: Contact form-->
-                    <div mdbModal #idiomsform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog cascading-modal" role="document">
-                            <!--Content-->
-                            <div class="modal-content">
+            <!--Modal: Contact form-->
+            <div mdbModal #idiomsform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                                <!--Header-->
-                                <div class="modal-header white-text" style="background-color: #156a86">
-                                    <h1 class="title">
-                                        <b>Phrases and Idioms Program</b>
-                                    </h1>
-                                </div>
-                                <!--Body-->
-                                <div class="modal-body mb-0" style="text-align:left">
+                        <!--Header-->
+                        <div class="modal-header white-text" style="background-color: #156a86">
+                            <h1 class="title">
+                                <b>Phrases and Idioms Program</b>
+                            </h1>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mb-0" style="text-align:left">
 
-                                    <div class="container-fluid row">
-                                        <div class="col-12">
+                            <div class="container-fluid row">
+                                <div class="col-12">
 
-                                            <p style="margin: 5px">
-                                                Learn all the phrases and idioms used by native English speakers, this will help you not to be an outsider:
-                                            </p>
+                                    <p style="margin: 5px">
+                                        Learn all the phrases and idioms used by native English speakers, this will help you not to be an outsider:
+                                    </p>
 
-                                            <ul style="margin-top: 2vh">
-                                                <li>Call it a day</li>
-                                                <li>Feel blue</li>
-                                                <li>Go for it</li>
-                                                <li>Goose bumps</li>
-                                                <li>Keep an eye on</li>
-                                                <li>Piece of cake</li>
-                                                <li>Speak of the devil</li>
-                                                <li>I blew it</li>
-                                                <li>Beats me</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="text-center mt-1-half" style="margin-top: 2vh">
-                                        <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="idiomsform.hide()" style="background-color: rgb(38, 48, 70)">
-                                            Close</button>
-                                    </div>
-
+                                    <ul style="margin-top: 2vh">
+                                        <li>Call it a day</li>
+                                        <li>Feel blue</li>
+                                        <li>Go for it</li>
+                                        <li>Goose bumps</li>
+                                        <li>Keep an eye on</li>
+                                        <li>Piece of cake</li>
+                                        <li>Speak of the devil</li>
+                                        <li>I blew it</li>
+                                        <li>Beats me</li>
+                                    </ul>
                                 </div>
                             </div>
+
+
+                            <div class="text-center mt-1-half" style="margin-top: 2vh">
+                                <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="idiomsform.hide()" style="background-color: rgb(38, 48, 70)">
+                                    Close</button>
+                            </div>
+
                         </div>
                     </div>
-                    <!--Modal: Contact form-->
+                </div>
+            </div>
+            <!--Modal: Contact form-->
 
 
         </div>
@@ -668,9 +669,8 @@
     <div class="row text-center justify-content-center" style="margin-bottom: 5vh; margin-top: 5vh;">
         <div>
             <div class="program-title z-depth-2" style="border-radius: 4px">
-                <br>
-                <h1 style="color: white; font-weight: bold; font-size: 50px">Other Sections</h1>
-                <br>
+                <h1 class="little-title" style="color: white; font-weight: bold; font-size: 50px; padding-top: 3vh; padding-bottom: 2vh;
+                 margin-right: 2vw; margin-left: 2vw">Other Sections</h1>
             </div>
         </div>
     </div>
@@ -695,53 +695,53 @@
                 </div>
 
             </div>
-                    <!--Modal: Contact form-->
-                    <div mdbModal #activitiesform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog cascading-modal" role="document">
-                            <!--Content-->
-                            <div class="modal-content">
+            <!--Modal: Contact form-->
+            <div mdbModal #activitiesform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                                <!--Header-->
-                                <div class="modal-header white-text" style="background-color: #156a86">
-                                    <h1 class="title">
-                                        <b>Activities</b>
-                                    </h1>
-                                </div>
-                                <!--Body-->
-                                <div class="modal-body mb-0" style="text-align:left">
+                        <!--Header-->
+                        <div class="modal-header white-text" style="background-color: #156a86">
+                            <h1 class="title">
+                                <b>Activities</b>
+                            </h1>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mb-0" style="text-align:left">
 
-                                    <div class="container-fluid row">
-                                        <div class="col-12">
+                            <div class="container-fluid row">
+                                <div class="col-12">
 
-                                            <p style="margin: 5px">
-                                                Along the course you will practice and learn doing a list of activities that will help you improve and get to your goals
-                                                faster, as:
-                                            </p>
+                                    <p style="margin: 5px">
+                                        Along the course you will practice and learn doing a list of activities that will help you improve and get to your goals
+                                        faster, as:
+                                    </p>
 
-                                            <ul style="margin-top: 2vh">
-                                                <li>Writting</li>
-                                                <li>Reading</li>
-                                                <li>Translating</li>
-                                                <li>Taking Dictations</li>
-                                                <li>Analysis of Information</li>
-                                                <li>Oral Practices</li>
-                                                <li>Dialogs</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="text-center mt-1-half" style="margin-top: 2vh">
-                                        <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="activitiesform.hide()" style="background-color: rgb(38, 48, 70)">
-                                            Close</button>
-                                    </div>
-
+                                    <ul style="margin-top: 2vh">
+                                        <li>Writting</li>
+                                        <li>Reading</li>
+                                        <li>Translating</li>
+                                        <li>Taking Dictations</li>
+                                        <li>Analysis of Information</li>
+                                        <li>Oral Practices</li>
+                                        <li>Dialogs</li>
+                                    </ul>
                                 </div>
                             </div>
+
+
+                            <div class="text-center mt-1-half" style="margin-top: 2vh">
+                                <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="activitiesform.hide()" style="background-color: rgb(38, 48, 70)">
+                                    Close</button>
+                            </div>
+
                         </div>
                     </div>
-                    <!--Modal: Contact form-->
+                </div>
+            </div>
+            <!--Modal: Contact form-->
 
 
         </div>
@@ -766,48 +766,47 @@
                 </div>
 
             </div>
-                    <!--Modal: Contact form-->
-                    <div mdbModal #kidsform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog cascading-modal" role="document">
-                            <!--Content-->
-                            <div class="modal-content">
+            <!--Modal: Contact form-->
+            <div mdbModal #kidsform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-                                <!--Header-->
-                                <div class="modal-header white-text" style="background-color: #156a86">
-                                    <h1 class="title">
-                                        <b>Kids</b>
-                                    </h1>
-                                </div>
-                                <!--Body-->
-                                <div class="modal-body mb-0" style="text-align:left">
+                        <!--Header-->
+                        <div class="modal-header white-text" style="background-color: #156a86">
+                            <h1 class="title">
+                                <b>Kids</b>
+                            </h1>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mb-0" style="text-align:left">
 
-                                    <div class="container-fluid row">
-                                        <div class="col-12">
+                            <div class="container-fluid row">
+                                <div class="col-12">
 
-                                            <p style="margin: 5px">
-                                                Is not the same teaching to a grown person that has a well developed idea of their native language, that teaching to a kid
-                                                that still learning how the world works. In this program we will use that
-                                                to show them a new perspective through other culture.
-                                                <br>
-                                                <br> The rhythm is slower in this case and the course will be about repeating
-                                                and practicing with a lot more of images and activities that the little one
-                                                will enjoy.
-                                            </p>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="text-center mt-1-half" style="margin-top: 2vh">
-                                        <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="kidsform.hide()" style="background-color: rgb(38, 48, 70)">
-                                            Close</button>
-                                    </div>
-
+                                    <p style="margin: 5px">
+                                        Is not the same teaching to a grown person that has a well developed idea of their native language, that teaching to a kid
+                                        that still learning how the world works. In this program we will use that to show
+                                        them a new perspective through other culture.
+                                        <br>
+                                        <br> The rhythm is slower in this case and the course will be about repeating and practicing
+                                        with a lot more of images and activities that the little one will enjoy.
+                                    </p>
                                 </div>
                             </div>
+
+
+                            <div class="text-center mt-1-half" style="margin-top: 2vh">
+                                <button class="btn mb-2 waves-light" data-dismiss="modal" mdbWavesEffect (click)="kidsform.hide()" style="background-color: rgb(38, 48, 70)">
+                                    Close</button>
+                            </div>
+
                         </div>
                     </div>
-                    <!--Modal: Contact form-->
+                </div>
+            </div>
+            <!--Modal: Contact form-->
 
 
         </div>

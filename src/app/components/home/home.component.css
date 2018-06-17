@@ -106,6 +106,10 @@
     height: 100%;
 }
 
+p {
+    color: #3c3c3c;
+}
+
 @media(min-width: 992px) {
   .inicial-button-div:first-of-type {
     text-align: end;
