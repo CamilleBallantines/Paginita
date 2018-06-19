@@ -7,7 +7,6 @@
 
 .program-title {
     background-color: #156a86;
-    height: 12vh;
     width: 25vw;
 }
 
@@ -48,8 +47,8 @@ h4 {
 @media (max-width: 840px) {
     .program-title {
         width: 100%;
-        padding-left: 2px; 
-        padding-right: 2px; 
+        padding-left: 4vw; 
+        padding-right: 4vw;
     }
 }
 

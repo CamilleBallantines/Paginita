@@ -35,7 +35,7 @@
 }
 
 .button-pill.active{
-    background: #04417a;
+    background: rgb(38, 48, 70);
     color: white
 }
 
