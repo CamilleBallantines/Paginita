@@ -4,22 +4,25 @@
             <div class="col-12 col-md-6">
                 <div class="md-form">
                     <i class="fas fa-user prefix notblack"></i>
-                    <input mdbInputDirective type="text" formControlName="nameGeneralForm" class="form-control">
+                    <input mdbInputDirective [mdbValidate]="false" type="text" formControlName="nameGeneralForm" class="form-control">
                     <label for="fullname">Full name</label>
+                    <span *ngIf="!nameGeneralForm.valid && nameGeneralForm.touched" class="inputVal text-danger">Please use 3 or more characters</span>
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="md-form">
                     <i class="fa fa-envelope prefix notblack"></i>
-                    <input mdbInputDirective type="text" formControlName="emailGeneralForm" class="form-control">
+                    <input mdbInputDirective [mdbValidate]="false" type="text" formControlName="emailGeneralForm" class="form-control">
                     <label for="email">E-mail adress</label>
+                    <span *ngIf="!emailGeneralForm.valid && emailGeneralForm.touched" class="inputVal text-danger">Please use a valid e-mail</span>
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="md-form">
                     <i class="fas fa-globe prefix notblack"></i>
-                    <input mdbInputDirective type="text" formControlName="countryGeneralForm" class="form-control">
+                    <input mdbInputDirective [mdbValidate]="false" type="text" formControlName="countryGeneralForm" class="form-control">
                     <label for="country">Home country</label>
+                    <span *ngIf="!countryGeneralForm.valid && countryGeneralForm.touched" class="inputVal text-danger">Please use 3 or more characters</span>
                 </div>
             </div>
         </div>

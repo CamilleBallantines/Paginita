@@ -1,30 +1,34 @@
 <div class="container-fluid lessons-form">
+    <form [formGroup]="formTranslation" (ngSubmit)="submitTranslation()">
     <div class="row">
         <div class="col-12 col-md-6">
             <div class="md-form">
                 <i class="fas fa-user prefix notblack"></i>
-                <input mdbInputDirective type="text" id="fullname" class="form-control">
+                <input mdbInputDirective [mdbValidate]="false" type="text" formControlName="nameTranslationForm" class="form-control">
                 <label for="fullname">Full name</label>
+                <span *ngIf="!nameTranslationForm.valid && nameTranslationForm.touched" class="inputVal text-danger">Please use 3 or more characters</span>
             </div>
         </div>
         <div class="col-12 col-md-6">
             <div class="md-form">
                 <i class="fa fa-envelope prefix notblack"></i>
-                <input mdbInputDirective type="text" id="email" class="form-control">
+                <input mdbInputDirective [mdbValidate]="false" type="text" formControlName="emailTranslationForm" class="form-control">
                 <label for="email">E-mail adress</label>
+                <span *ngIf="!emailTranslationForm.valid && emailTranslationForm.touched" class="inputVal text-danger">Please use a valid e-mail</span>
             </div>
         </div>
         <div class="col-12 col-md-6">
             <div class="md-form">
                 <i class="fas fa-globe prefix notblack"></i>
-                <input mdbInputDirective type="text" id="country" class="form-control">
+                <input mdbInputDirective [mdbValidate]="false" type="text" formControlName="countryTranslationForm" class="form-control">
                 <label for="country">Home country</label>
+                <span *ngIf="!countryTranslationForm.valid && countryTranslationForm.touched" class="inputVal text-danger">Please use 3 or more characters</span>
             </div>
         </div>
         <div class="col-12 col-md-6">
             <div class="md-form">
                     <i class="far fa-calendar-alt prefix notblack"></i>
-                    <input type="text" placeholder="Choose your ideal starting date" class="form-control" bsDatepicker>
+                    <input type="text" placeholder="Choose your ideal starting date" formControlName="sdateTranslationForm" class="form-control" bsDatepicker>
             </div>
         </div>
     </div>
@@ -33,15 +37,16 @@
         <div class="col-12 col-md-6">
             <div class="md-form">
                 <i class="fas fa-book-open prefix notblack"></i>
-                <input mdbInputDirective type="text" id="page-number" class="form-control">
+                <input mdbInputDirective [mdbValidate]="false" type="text" formControlName="numberTranslationForm" class="form-control">
                 <label for="page-number">Project's page number</label>
+                <span *ngIf="!numberTranslationForm.valid && numberTranslationForm.touched" class="inputVal text-danger">Please use only numbers</span>
             </div>
         </div>
 
         <div class="col-12 col-md-6">
             <div class="md-form">
                 <i class="far fa-calendar-alt prefix notblack"></i>
-                <input type="text" placeholder="Choose your ideal delivering date" class="form-control" bsDatepicker>
+                <input type="text" placeholder="Choose your ideal delivering date" formControlName="edateTranslationForm" class="form-control" bsDatepicker>
             </div>
         </div>
     </div>
@@ -50,11 +55,12 @@
         <div class="col-12 col-md-6 offset-md-3 text-center">
             <div class="md-form">
                 <p class="contact-subtitle notblack">Tell me about you and your project</p>
-                <textarea class="form-control message" placeholder="Write your message..." rows="4"></textarea>
+                <textarea class="form-control message" formControlName="textTranslationForm" placeholder="Write your message..." rows="4"></textarea>
             </div>
         </div>
     </div>
 
     <app-send></app-send>
 
+    </form>
 </div>

@@ -1,8 +1,5 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
-import { SendComponent} from '../send/send.component';
-import { FormBuilder} from '@angular/forms';
-import { FormGroup} from '@angular/forms';
-import { Validators} from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-form-general',
@@ -23,6 +20,16 @@ export class FormGeneralComponent implements OnInit {
       countryGeneralForm: ['', [Validators.required, Validators.minLength(3)]],
       textGeneralForm: ['', []],
     })
+  }
+
+  get nameGeneralForm() {
+    return this.formGeneral.get('nameGeneralForm');
+  }
+  get emailGeneralForm() {
+    return this.formGeneral.get('emailGeneralForm');
+  }
+  get countryGeneralForm() {
+    return this.formGeneral.get('countryGeneralForm');
   }
  
 }
