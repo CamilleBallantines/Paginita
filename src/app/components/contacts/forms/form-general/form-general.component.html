@@ -1,41 +1,43 @@
 <div class="container-fluid lessons-form">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="md-form">
-                <i class="fas fa-user prefix notblack"></i>
-                <input mdbInputDirective type="text" id="fullname" class="form-control">
-                <label for="fullname">Full name</label>
+    <form [formGroup]="formGeneral" (ngSubmit)="submitGeneral()">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="md-form">
+                    <i class="fas fa-user prefix notblack"></i>
+                    <input mdbInputDirective type="text" formControlName="nameGeneralForm" class="form-control">
+                    <label for="fullname">Full name</label>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="md-form">
+                    <i class="fa fa-envelope prefix notblack"></i>
+                    <input mdbInputDirective type="text" formControlName="emailGeneralForm" class="form-control">
+                    <label for="email">E-mail adress</label>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="md-form">
+                    <i class="fas fa-globe prefix notblack"></i>
+                    <input mdbInputDirective type="text" formControlName="countryGeneralForm" class="form-control">
+                    <label for="country">Home country</label>
+                </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
-            <div class="md-form">
-                <i class="fa fa-envelope prefix notblack"></i>
-                <input mdbInputDirective type="text" id="email" class="form-control">
-                <label for="email">E-mail adress</label>
+
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3 text-center">
+                <div class="md-form">
+                    <p class="contact-subtitle notblack">Tell me about you and your interests</p>
+                    <textarea class="form-control message" formControlName="textGeneralForm" placeholder="Write your message..." rows="4"></textarea>
+                </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
-            <div class="md-form">
-                <i class="fas fa-globe prefix notblack"></i>
-                <input mdbInputDirective type="text" id="country" class="form-control">
-                <label for="country">Home country</label>
-            </div>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12 col-md-6 offset-md-3 text-center">
-            <div class="md-form">
-                <p class="contact-subtitle notblack">Tell me about you and your interests</p>
-                <textarea class="form-control message" placeholder="Write your message..." rows="4"></textarea>
-            </div>
-        </div>
-    </div>
+    <!--BUTTON-->
 
-<!--BUTTON-->
+        <app-send></app-send>
 
-    <app-send></app-send>
+    <!--BUTTON-->
 
-<!--BUTTON-->
-
+    </form>
 </div>

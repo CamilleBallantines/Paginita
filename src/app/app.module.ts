@@ -19,6 +19,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { SendComponent} from './components/contacts/forms/send/send.component';
 import { CardsComponent } from './components/home/cards/cards.component';
 import { AboutComponent } from './components/about/about.component';
+import { ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { AboutComponent } from './components/about/about.component';
     TabsModule.forRoot(),
     BsDatepickerModule.forRoot(),
     ModalModule.forRoot(),
+    ReactiveFormsModule,
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
